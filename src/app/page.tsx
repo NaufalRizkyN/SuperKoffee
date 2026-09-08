@@ -34,7 +34,7 @@ export default function HomePage() {
           className="object-cover"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-primary/50 via-primary/30 to-primary/70" />
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/30 via-primary/15 to-primary/50" />
         <div className="container-content relative z-10 py-32 text-center text-cream">
           <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-cream/80">
             Coffee Shop Surabaya
