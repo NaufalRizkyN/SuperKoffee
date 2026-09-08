@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { siteConfig } from "@/lib/data";
+import Image from "next/image";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -34,12 +35,16 @@ export default function Navbar() {
       }`}
     >
       <div className="container-content flex h-16 items-center justify-between md:h-20">
-        <Link
-          href="/"
-          className="font-heading text-xl font-semibold tracking-tight text-primary md:text-2xl"
-        >
-          {siteConfig.name}
-        </Link>
+         <Link href="/" className="flex items-center">
+        <Image
+        src="/logo.png"
+        alt="Super Koffee"
+        width={170}
+        height={60}
+        className="h-10 w-auto md:h-12"
+        priority
+        />
+      </Link>
 
         {/* Desktop Nav */}
         <nav className="hidden items-center gap-8 lg:flex">
